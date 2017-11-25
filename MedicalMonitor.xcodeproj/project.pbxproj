@@ -1,0 +1,1078 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65A932FC6E4C3184C1AF2997 /* Pods_MedicalMonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08264010B3CB5EAFE4EFC3E /* Pods_MedicalMonitorTests.framework */; };
+		6F352E46CB90D331EFA8F885 /* Pods_MedicalMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229523457DA87C916B8459B0 /* Pods_MedicalMonitor.framework */; };
+		8417A6701F5A83BA00593A14 /* Env.m in Sources */ = {isa = PBXBuildFile; fileRef = 8417A66F1F5A83BA00593A14 /* Env.m */; };
+		845D817A1F35C1DC00BD3DAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81791F35C1DC00BD3DAA /* main.m */; };
+		845D817D1F35C1DC00BD3DAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D817C1F35C1DC00BD3DAA /* AppDelegate.m */; };
+		845D81801F35C1DC00BD3DAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D817F1F35C1DC00BD3DAA /* ViewController.m */; };
+		845D81831F35C1DC00BD3DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845D81811F35C1DC00BD3DAA /* Main.storyboard */; };
+		845D81861F35C1DC00BD3DAA /* MedicalMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845D81841F35C1DC00BD3DAA /* MedicalMonitor.xcdatamodeld */; };
+		845D81881F35C1DC00BD3DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845D81871F35C1DC00BD3DAA /* Assets.xcassets */; };
+		845D818B1F35C1DC00BD3DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845D81891F35C1DC00BD3DAA /* LaunchScreen.storyboard */; };
+		845D81961F35C1DC00BD3DAA /* MedicalMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81951F35C1DC00BD3DAA /* MedicalMonitorTests.m */; };
+		845D81A11F35C1DC00BD3DAA /* MedicalMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81A01F35C1DC00BD3DAA /* MedicalMonitorUITests.m */; };
+		845D81AF1F35C49400BD3DAA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 845D81AE1F35C49400BD3DAA /* Podfile */; };
+		845D81CA1F35E0DB00BD3DAA /* DDBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81C91F35E0DB00BD3DAA /* DDBMainViewController.m */; };
+		845D81CD1F35E0F500BD3DAA /* DDBDynamoDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81CC1F35E0F500BD3DAA /* DDBDynamoDBManager.m */; };
+		845D81D81F37559100BD3DAA /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D81D61F37559100BD3DAA /* ConnectionViewController.swift */; };
+		845D81D91F37559100BD3DAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D81D71F37559100BD3DAA /* Constants.swift */; };
+		845D81E81F39F8C100BD3DAA /* MMIoTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D81E71F39F8C100BD3DAA /* MMIoTManager.swift */; };
+		845D81EF1F3AF40B00BD3DAA /* LineChartTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81ED1F3AF40B00BD3DAA /* LineChartTimeViewController.m */; };
+		845D81F01F3AF40B00BD3DAA /* LineChartTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D81EE1F3AF40B00BD3DAA /* LineChartTimeViewController.xib */; };
+		845D81F31F3AF44500BD3DAA /* DemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81F21F3AF44500BD3DAA /* DemoBaseViewController.m */; };
+		845D81FC1F3AF78700BD3DAA /* DateValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81F61F3AF78700BD3DAA /* DateValueFormatter.m */; };
+		845D81FD1F3AF78700BD3DAA /* DayAxisValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81F81F3AF78700BD3DAA /* DayAxisValueFormatter.m */; };
+		845D81FE1F3AF78700BD3DAA /* IntAxisValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D81FA1F3AF78700BD3DAA /* IntAxisValueFormatter.m */; };
+		845D81FF1F3AF78700BD3DAA /* LargeValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D81FB1F3AF78700BD3DAA /* LargeValueFormatter.swift */; };
+		847045371FB85B9600C3A164 /* UserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847045361FB85B9600C3A164 /* UserSettingViewController.m */; };
+		847045411FB85DBD00C3A164 /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 847045401FB85DBD00C3A164 /* Crypto.m */; };
+		847045441FB861F400C3A164 /* cdecode.c in Sources */ = {isa = PBXBuildFile; fileRef = 847045431FB861F400C3A164 /* cdecode.c */; };
+		84EEF4501F63B9F8004EEEAA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF44F1F63B9F8004EEEAA /* Constants.m */; };
+		84EEF4541F63C215004EEEAA /* NoticeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF4531F63C215004EEEAA /* NoticeState.m */; };
+		84EEF45F1F63DD76004EEEAA /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF4591F63DD76004EEEAA /* ControlViewController.m */; };
+		84EEF4601F63DD76004EEEAA /* MMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF45A1F63DD76004EEEAA /* MMTableViewController.m */; };
+		84EEF4611F63DD76004EEEAA /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF45E1F63DD76004EEEAA /* MMTableViewCell.m */; };
+		84EEF4651F63DD8D004EEEAA /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF4631F63DD8D004EEEAA /* SettingViewController.m */; };
+		84EEF4661F63DD8D004EEEAA /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EEF4641F63DD8D004EEEAA /* SettingViewController.xib */; };
+		84EEF4691F643451004EEEAA /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF4681F643451004EEEAA /* HistoryTableViewCell.m */; };
+		84EEF46C1F643477004EEEAA /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF46B1F643477004EEEAA /* HistoryTableViewController.m */; };
+		C9FFAAB7C2C29B9644F87E79 /* Pods_MedicalMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADFF9F97DC167D17EBADD86 /* Pods_MedicalMonitorUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		845D81921F35C1DC00BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D816D1F35C1DC00BD3DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845D81741F35C1DC00BD3DAA;
+			remoteInfo = MedicalMonitor;
+		};
+		845D819D1F35C1DC00BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D816D1F35C1DC00BD3DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845D81741F35C1DC00BD3DAA;
+			remoteInfo = MedicalMonitor;
+		};
+		845D81B91F35C50800BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D81B01F35C50700BD3DAA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F777641975BF333E409218CD5E5E733;
+			remoteInfo = AWSCore;
+		};
+		845D81BB1F35C50800BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D81B01F35C50700BD3DAA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 24B794A95F631FF83EDBD0A1DFCF852A;
+			remoteInfo = AWSDynamoDB;
+		};
+		845D81BD1F35C50800BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D81B01F35C50700BD3DAA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 320FFAC6C1AD1640281E087F4E691F3B;
+			remoteInfo = Charts;
+		};
+		845D81BF1F35C50800BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D81B01F35C50700BD3DAA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30C11090FC52D2B4AD283E98B68DCFA5;
+			remoteInfo = "Pods-MedicalMonitor";
+		};
+		845D81C11F35C50800BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D81B01F35C50700BD3DAA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96D4740AB278D9ACFC44C3A095CDA73C;
+			remoteInfo = "Pods-MedicalMonitorTests";
+		};
+		845D81C31F35C50800BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D81B01F35C50700BD3DAA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 47CE13E7E2B3EF91A4400D47A674EE81;
+			remoteInfo = "Pods-MedicalMonitorUITests";
+		};
+		845D81E51F39F88A00BD3DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845D81B01F35C50700BD3DAA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32A258EC4C071CEE886970678FE792CC;
+			remoteInfo = AWSIoT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0231F9FC8440C37F1C327021 /* Pods-MedicalMonitorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalMonitorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalMonitorTests/Pods-MedicalMonitorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		229523457DA87C916B8459B0 /* Pods_MedicalMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A62F8A379D7406BAED28D95 /* Pods-MedicalMonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalMonitorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalMonitorUITests/Pods-MedicalMonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F7756CC02D79EE741D77F32 /* Pods-MedicalMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalMonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalMonitorTests/Pods-MedicalMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		8417A66E1F5A83BA00593A14 /* Env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Env.h; path = Utils/Env.h; sourceTree = "<group>"; };
+		8417A66F1F5A83BA00593A14 /* Env.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Env.m; path = Utils/Env.m; sourceTree = "<group>"; };
+		845D81751F35C1DC00BD3DAA /* MedicalMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845D81791F35C1DC00BD3DAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		845D817B1F35C1DC00BD3DAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		845D817C1F35C1DC00BD3DAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		845D817E1F35C1DC00BD3DAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		845D817F1F35C1DC00BD3DAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		845D81821F35C1DC00BD3DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		845D81851F35C1DC00BD3DAA /* MedicalMonitor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedicalMonitor.xcdatamodel; sourceTree = "<group>"; };
+		845D81871F35C1DC00BD3DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845D818A1F35C1DC00BD3DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		845D818C1F35C1DC00BD3DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845D81911F35C1DC00BD3DAA /* MedicalMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicalMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845D81951F35C1DC00BD3DAA /* MedicalMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalMonitorTests.m; sourceTree = "<group>"; };
+		845D81971F35C1DC00BD3DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845D819C1F35C1DC00BD3DAA /* MedicalMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicalMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845D81A01F35C1DC00BD3DAA /* MedicalMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalMonitorUITests.m; sourceTree = "<group>"; };
+		845D81A21F35C1DC00BD3DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845D81AE1F35C49400BD3DAA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		845D81B01F35C50700BD3DAA /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		845D81C81F35E0DB00BD3DAA /* DDBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBMainViewController.h; sourceTree = "<group>"; };
+		845D81C91F35E0DB00BD3DAA /* DDBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBMainViewController.m; sourceTree = "<group>"; };
+		845D81CB1F35E0F500BD3DAA /* DDBDynamoDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBDynamoDBManager.h; sourceTree = "<group>"; };
+		845D81CC1F35E0F500BD3DAA /* DDBDynamoDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBDynamoDBManager.m; sourceTree = "<group>"; };
+		845D81CF1F37558F00BD3DAA /* MedicalMonitor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedicalMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
+		845D81D61F37559100BD3DAA /* ConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
+		845D81D71F37559100BD3DAA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		845D81E71F39F8C100BD3DAA /* MMIoTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMIoTManager.swift; sourceTree = "<group>"; };
+		845D81EC1F3AF40B00BD3DAA /* LineChartTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartTimeViewController.h; sourceTree = "<group>"; };
+		845D81ED1F3AF40B00BD3DAA /* LineChartTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartTimeViewController.m; sourceTree = "<group>"; };
+		845D81EE1F3AF40B00BD3DAA /* LineChartTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartTimeViewController.xib; sourceTree = "<group>"; };
+		845D81F11F3AF44500BD3DAA /* DemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBaseViewController.h; sourceTree = "<group>"; };
+		845D81F21F3AF44500BD3DAA /* DemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBaseViewController.m; sourceTree = "<group>"; };
+		845D81F51F3AF78700BD3DAA /* DateValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateValueFormatter.h; path = Formatters/DateValueFormatter.h; sourceTree = "<group>"; };
+		845D81F61F3AF78700BD3DAA /* DateValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateValueFormatter.m; path = Formatters/DateValueFormatter.m; sourceTree = "<group>"; };
+		845D81F71F3AF78700BD3DAA /* DayAxisValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DayAxisValueFormatter.h; path = Formatters/DayAxisValueFormatter.h; sourceTree = "<group>"; };
+		845D81F81F3AF78700BD3DAA /* DayAxisValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayAxisValueFormatter.m; path = Formatters/DayAxisValueFormatter.m; sourceTree = "<group>"; };
+		845D81F91F3AF78700BD3DAA /* IntAxisValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntAxisValueFormatter.h; path = Formatters/IntAxisValueFormatter.h; sourceTree = "<group>"; };
+		845D81FA1F3AF78700BD3DAA /* IntAxisValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntAxisValueFormatter.m; path = Formatters/IntAxisValueFormatter.m; sourceTree = "<group>"; };
+		845D81FB1F3AF78700BD3DAA /* LargeValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LargeValueFormatter.swift; path = Formatters/LargeValueFormatter.swift; sourceTree = "<group>"; };
+		845D82051F3E003800BD3DAA /* MedicalMonitor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedicalMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
+		847045351FB85B9600C3A164 /* UserSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingViewController.h; sourceTree = "<group>"; };
+		847045361FB85B9600C3A164 /* UserSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingViewController.m; sourceTree = "<group>"; };
+		8470453F1FB85DBD00C3A164 /* Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		847045401FB85DBD00C3A164 /* Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crypto.m; sourceTree = "<group>"; };
+		847045421FB861F400C3A164 /* cdecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cdecode.h; path = Utils/cdecode.h; sourceTree = "<group>"; };
+		847045431FB861F400C3A164 /* cdecode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cdecode.c; path = Utils/cdecode.c; sourceTree = "<group>"; };
+		84EEF40D1F5A9D04004EEEAA /* MedicalMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalMonitor.entitlements; sourceTree = "<group>"; };
+		84EEF44E1F63B9F8004EEEAA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		84EEF44F1F63B9F8004EEEAA /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		84EEF4521F63C215004EEEAA /* NoticeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeState.h; sourceTree = "<group>"; };
+		84EEF4531F63C215004EEEAA /* NoticeState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeState.m; sourceTree = "<group>"; };
+		84EEF4591F63DD76004EEEAA /* ControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlViewController.m; sourceTree = "<group>"; };
+		84EEF45A1F63DD76004EEEAA /* MMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewController.m; sourceTree = "<group>"; };
+		84EEF45B1F63DD76004EEEAA /* ControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlViewController.h; sourceTree = "<group>"; };
+		84EEF45C1F63DD76004EEEAA /* MMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewCell.h; sourceTree = "<group>"; };
+		84EEF45D1F63DD76004EEEAA /* MMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewController.h; sourceTree = "<group>"; };
+		84EEF45E1F63DD76004EEEAA /* MMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewCell.m; sourceTree = "<group>"; };
+		84EEF4621F63DD8D004EEEAA /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		84EEF4631F63DD8D004EEEAA /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		84EEF4641F63DD8D004EEEAA /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		84EEF4671F643451004EEEAA /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		84EEF4681F643451004EEEAA /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		84EEF46A1F643477004EEEAA /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		84EEF46B1F643477004EEEAA /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		8607674F7257E0914994F0F8 /* Pods-MedicalMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		87B89BB141B919D82671E5F4 /* Pods-MedicalMonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalMonitorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalMonitorUITests/Pods-MedicalMonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8FAB047BA29CE8AF8AEB4833 /* Pods-MedicalMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		B08264010B3CB5EAFE4EFC3E /* Pods_MedicalMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADFF9F97DC167D17EBADD86 /* Pods_MedicalMonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalMonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845D81721F35C1DC00BD3DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F352E46CB90D331EFA8F885 /* Pods_MedicalMonitor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845D818E1F35C1DC00BD3DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A932FC6E4C3184C1AF2997 /* Pods_MedicalMonitorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845D81991F35C1DC00BD3DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FFAAB7C2C29B9644F87E79 /* Pods_MedicalMonitorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8417A6661F5A837C00593A14 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				847045421FB861F400C3A164 /* cdecode.h */,
+				847045431FB861F400C3A164 /* cdecode.c */,
+				8417A66E1F5A83BA00593A14 /* Env.h */,
+				8417A66F1F5A83BA00593A14 /* Env.m */,
+				84EEF44E1F63B9F8004EEEAA /* Constants.h */,
+				84EEF44F1F63B9F8004EEEAA /* Constants.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		845D816C1F35C1DC00BD3DAA = {
+			isa = PBXGroup;
+			children = (
+				845D81771F35C1DC00BD3DAA /* MedicalMonitor */,
+				845D81941F35C1DC00BD3DAA /* MedicalMonitorTests */,
+				845D819F1F35C1DC00BD3DAA /* MedicalMonitorUITests */,
+				845D81761F35C1DC00BD3DAA /* Products */,
+				FC63DA1D55CD45FF68FCEE13 /* Pods */,
+				F06281E4B60D723207A04CBE /* Frameworks */,
+				845D81B01F35C50700BD3DAA /* Pods.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		845D81761F35C1DC00BD3DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845D81751F35C1DC00BD3DAA /* MedicalMonitor.app */,
+				845D81911F35C1DC00BD3DAA /* MedicalMonitorTests.xctest */,
+				845D819C1F35C1DC00BD3DAA /* MedicalMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845D81771F35C1DC00BD3DAA /* MedicalMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				84EEF40D1F5A9D04004EEEAA /* MedicalMonitor.entitlements */,
+				8417A6661F5A837C00593A14 /* Utils */,
+				84EEF4511F63C1C3004EEEAA /* Model */,
+				845D81F41F3AF76C00BD3DAA /* Formatters */,
+				84EEF4581F63DD50004EEEAA /* ViewController */,
+				845D81EB1F3AF3F800BD3DAA /* Charts */,
+				845D817B1F35C1DC00BD3DAA /* AppDelegate.h */,
+				845D817C1F35C1DC00BD3DAA /* AppDelegate.m */,
+				845D817E1F35C1DC00BD3DAA /* ViewController.h */,
+				845D817F1F35C1DC00BD3DAA /* ViewController.m */,
+				845D81C81F35E0DB00BD3DAA /* DDBMainViewController.h */,
+				845D81C91F35E0DB00BD3DAA /* DDBMainViewController.m */,
+				845D81CB1F35E0F500BD3DAA /* DDBDynamoDBManager.h */,
+				845D81CC1F35E0F500BD3DAA /* DDBDynamoDBManager.m */,
+				845D82051F3E003800BD3DAA /* MedicalMonitor-Bridging-Header.h */,
+				845D81E71F39F8C100BD3DAA /* MMIoTManager.swift */,
+				845D81D61F37559100BD3DAA /* ConnectionViewController.swift */,
+				845D81D71F37559100BD3DAA /* Constants.swift */,
+				845D81811F35C1DC00BD3DAA /* Main.storyboard */,
+				845D81871F35C1DC00BD3DAA /* Assets.xcassets */,
+				845D81891F35C1DC00BD3DAA /* LaunchScreen.storyboard */,
+				845D818C1F35C1DC00BD3DAA /* Info.plist */,
+				845D81841F35C1DC00BD3DAA /* MedicalMonitor.xcdatamodeld */,
+				845D81781F35C1DC00BD3DAA /* Supporting Files */,
+				845D81CF1F37558F00BD3DAA /* MedicalMonitor-Bridging-Header.h */,
+			);
+			path = MedicalMonitor;
+			sourceTree = "<group>";
+		};
+		845D81781F35C1DC00BD3DAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				845D81791F35C1DC00BD3DAA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		845D81941F35C1DC00BD3DAA /* MedicalMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				845D81951F35C1DC00BD3DAA /* MedicalMonitorTests.m */,
+				845D81971F35C1DC00BD3DAA /* Info.plist */,
+			);
+			path = MedicalMonitorTests;
+			sourceTree = "<group>";
+		};
+		845D819F1F35C1DC00BD3DAA /* MedicalMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				845D81A01F35C1DC00BD3DAA /* MedicalMonitorUITests.m */,
+				845D81A21F35C1DC00BD3DAA /* Info.plist */,
+			);
+			path = MedicalMonitorUITests;
+			sourceTree = "<group>";
+		};
+		845D81B11F35C50700BD3DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845D81BA1F35C50800BD3DAA /* AWSCore.framework */,
+				845D81BC1F35C50800BD3DAA /* AWSDynamoDB.framework */,
+				845D81E61F39F88A00BD3DAA /* AWSIoT.framework */,
+				845D81BE1F35C50800BD3DAA /* Charts.framework */,
+				845D81C01F35C50800BD3DAA /* Pods_MedicalMonitor.framework */,
+				845D81C21F35C50800BD3DAA /* Pods_MedicalMonitorTests.framework */,
+				845D81C41F35C50800BD3DAA /* Pods_MedicalMonitorUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845D81EB1F3AF3F800BD3DAA /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				845D81F11F3AF44500BD3DAA /* DemoBaseViewController.h */,
+				845D81F21F3AF44500BD3DAA /* DemoBaseViewController.m */,
+				845D81EC1F3AF40B00BD3DAA /* LineChartTimeViewController.h */,
+				845D81ED1F3AF40B00BD3DAA /* LineChartTimeViewController.m */,
+				845D81EE1F3AF40B00BD3DAA /* LineChartTimeViewController.xib */,
+			);
+			name = Charts;
+			sourceTree = "<group>";
+		};
+		845D81F41F3AF76C00BD3DAA /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				845D81F51F3AF78700BD3DAA /* DateValueFormatter.h */,
+				845D81F61F3AF78700BD3DAA /* DateValueFormatter.m */,
+				845D81F71F3AF78700BD3DAA /* DayAxisValueFormatter.h */,
+				845D81F81F3AF78700BD3DAA /* DayAxisValueFormatter.m */,
+				845D81F91F3AF78700BD3DAA /* IntAxisValueFormatter.h */,
+				845D81FA1F3AF78700BD3DAA /* IntAxisValueFormatter.m */,
+				845D81FB1F3AF78700BD3DAA /* LargeValueFormatter.swift */,
+			);
+			name = Formatters;
+			sourceTree = "<group>";
+		};
+		84EEF4511F63C1C3004EEEAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84EEF4521F63C215004EEEAA /* NoticeState.h */,
+				84EEF4531F63C215004EEEAA /* NoticeState.m */,
+				8470453F1FB85DBD00C3A164 /* Crypto.h */,
+				847045401FB85DBD00C3A164 /* Crypto.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84EEF4581F63DD50004EEEAA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84EEF4591F63DD76004EEEAA /* ControlViewController.m */,
+				84EEF45B1F63DD76004EEEAA /* ControlViewController.h */,
+				84EEF45A1F63DD76004EEEAA /* MMTableViewController.m */,
+				84EEF45D1F63DD76004EEEAA /* MMTableViewController.h */,
+				84EEF45C1F63DD76004EEEAA /* MMTableViewCell.h */,
+				84EEF45E1F63DD76004EEEAA /* MMTableViewCell.m */,
+				84EEF4621F63DD8D004EEEAA /* SettingViewController.h */,
+				84EEF4631F63DD8D004EEEAA /* SettingViewController.m */,
+				84EEF4641F63DD8D004EEEAA /* SettingViewController.xib */,
+				84EEF4671F643451004EEEAA /* HistoryTableViewCell.h */,
+				84EEF4681F643451004EEEAA /* HistoryTableViewCell.m */,
+				84EEF46A1F643477004EEEAA /* HistoryTableViewController.h */,
+				84EEF46B1F643477004EEEAA /* HistoryTableViewController.m */,
+				847045351FB85B9600C3A164 /* UserSettingViewController.h */,
+				847045361FB85B9600C3A164 /* UserSettingViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F06281E4B60D723207A04CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				845D81AE1F35C49400BD3DAA /* Podfile */,
+				229523457DA87C916B8459B0 /* Pods_MedicalMonitor.framework */,
+				B08264010B3CB5EAFE4EFC3E /* Pods_MedicalMonitorTests.framework */,
+				FADFF9F97DC167D17EBADD86 /* Pods_MedicalMonitorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC63DA1D55CD45FF68FCEE13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FAB047BA29CE8AF8AEB4833 /* Pods-MedicalMonitor.debug.xcconfig */,
+				8607674F7257E0914994F0F8 /* Pods-MedicalMonitor.release.xcconfig */,
+				0231F9FC8440C37F1C327021 /* Pods-MedicalMonitorTests.debug.xcconfig */,
+				3F7756CC02D79EE741D77F32 /* Pods-MedicalMonitorTests.release.xcconfig */,
+				3A62F8A379D7406BAED28D95 /* Pods-MedicalMonitorUITests.debug.xcconfig */,
+				87B89BB141B919D82671E5F4 /* Pods-MedicalMonitorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845D81741F35C1DC00BD3DAA /* MedicalMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845D81A51F35C1DC00BD3DAA /* Build configuration list for PBXNativeTarget "MedicalMonitor" */;
+			buildPhases = (
+				2A5F0709829F10DF852EF3F9 /* [CP] Check Pods Manifest.lock */,
+				845D81711F35C1DC00BD3DAA /* Sources */,
+				845D81721F35C1DC00BD3DAA /* Frameworks */,
+				845D81731F35C1DC00BD3DAA /* Resources */,
+				E89C20553A24D3CF5D652103 /* [CP] Embed Pods Frameworks */,
+				D686E95405E3EC1ABA5E879B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedicalMonitor;
+			productName = MedicalMonitor;
+			productReference = 845D81751F35C1DC00BD3DAA /* MedicalMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		845D81901F35C1DC00BD3DAA /* MedicalMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845D81A81F35C1DC00BD3DAA /* Build configuration list for PBXNativeTarget "MedicalMonitorTests" */;
+			buildPhases = (
+				347077D49566ABB573AD31B9 /* [CP] Check Pods Manifest.lock */,
+				845D818D1F35C1DC00BD3DAA /* Sources */,
+				845D818E1F35C1DC00BD3DAA /* Frameworks */,
+				845D818F1F35C1DC00BD3DAA /* Resources */,
+				0F4AA3E4AF8D162ADD0851D4 /* [CP] Embed Pods Frameworks */,
+				868BE32016A3D401FE603DCC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845D81931F35C1DC00BD3DAA /* PBXTargetDependency */,
+			);
+			name = MedicalMonitorTests;
+			productName = MedicalMonitorTests;
+			productReference = 845D81911F35C1DC00BD3DAA /* MedicalMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		845D819B1F35C1DC00BD3DAA /* MedicalMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845D81AB1F35C1DC00BD3DAA /* Build configuration list for PBXNativeTarget "MedicalMonitorUITests" */;
+			buildPhases = (
+				148C56F6A092E6C686C57BD8 /* [CP] Check Pods Manifest.lock */,
+				845D81981F35C1DC00BD3DAA /* Sources */,
+				845D81991F35C1DC00BD3DAA /* Frameworks */,
+				845D819A1F35C1DC00BD3DAA /* Resources */,
+				612ED42DFB2EDE1C49D1CF05 /* [CP] Embed Pods Frameworks */,
+				EC625F6F12E78B11279E309F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845D819E1F35C1DC00BD3DAA /* PBXTargetDependency */,
+			);
+			name = MedicalMonitorUITests;
+			productName = MedicalMonitorUITests;
+			productReference = 845D819C1F35C1DC00BD3DAA /* MedicalMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845D816D1F35C1DC00BD3DAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = talengineer;
+				TargetAttributes = {
+					845D81741F35C1DC00BD3DAA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DFM84XB9EC;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					845D81901F35C1DC00BD3DAA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 845D81741F35C1DC00BD3DAA;
+					};
+					845D819B1F35C1DC00BD3DAA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 845D81741F35C1DC00BD3DAA;
+					};
+				};
+			};
+			buildConfigurationList = 845D81701F35C1DC00BD3DAA /* Build configuration list for PBXProject "MedicalMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845D816C1F35C1DC00BD3DAA;
+			productRefGroup = 845D81761F35C1DC00BD3DAA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 845D81B11F35C50700BD3DAA /* Products */;
+					ProjectRef = 845D81B01F35C50700BD3DAA /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				845D81741F35C1DC00BD3DAA /* MedicalMonitor */,
+				845D81901F35C1DC00BD3DAA /* MedicalMonitorTests */,
+				845D819B1F35C1DC00BD3DAA /* MedicalMonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		845D81BA1F35C50800BD3DAA /* AWSCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AWSCore.framework;
+			remoteRef = 845D81B91F35C50800BD3DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		845D81BC1F35C50800BD3DAA /* AWSDynamoDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AWSDynamoDB.framework;
+			remoteRef = 845D81BB1F35C50800BD3DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		845D81BE1F35C50800BD3DAA /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 845D81BD1F35C50800BD3DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		845D81C01F35C50800BD3DAA /* Pods_MedicalMonitor.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_MedicalMonitor.framework;
+			remoteRef = 845D81BF1F35C50800BD3DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		845D81C21F35C50800BD3DAA /* Pods_MedicalMonitorTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_MedicalMonitorTests.framework;
+			remoteRef = 845D81C11F35C50800BD3DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		845D81C41F35C50800BD3DAA /* Pods_MedicalMonitorUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_MedicalMonitorUITests.framework;
+			remoteRef = 845D81C31F35C50800BD3DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		845D81E61F39F88A00BD3DAA /* AWSIoT.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AWSIoT.framework;
+			remoteRef = 845D81E51F39F88A00BD3DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845D81731F35C1DC00BD3DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845D818B1F35C1DC00BD3DAA /* LaunchScreen.storyboard in Resources */,
+				845D81881F35C1DC00BD3DAA /* Assets.xcassets in Resources */,
+				845D81AF1F35C49400BD3DAA /* Podfile in Resources */,
+				845D81F01F3AF40B00BD3DAA /* LineChartTimeViewController.xib in Resources */,
+				84EEF4661F63DD8D004EEEAA /* SettingViewController.xib in Resources */,
+				845D81831F35C1DC00BD3DAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845D818F1F35C1DC00BD3DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845D819A1F35C1DC00BD3DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F4AA3E4AF8D162ADD0851D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitorTests/Pods-MedicalMonitorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		148C56F6A092E6C686C57BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2A5F0709829F10DF852EF3F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		347077D49566ABB573AD31B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		612ED42DFB2EDE1C49D1CF05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitorUITests/Pods-MedicalMonitorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868BE32016A3D401FE603DCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitorTests/Pods-MedicalMonitorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D686E95405E3EC1ABA5E879B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89C20553A24D3CF5D652103 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC625F6F12E78B11279E309F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitorUITests/Pods-MedicalMonitorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845D81711F35C1DC00BD3DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847045441FB861F400C3A164 /* cdecode.c in Sources */,
+				84EEF46C1F643477004EEEAA /* HistoryTableViewController.m in Sources */,
+				845D81CA1F35E0DB00BD3DAA /* DDBMainViewController.m in Sources */,
+				84EEF4541F63C215004EEEAA /* NoticeState.m in Sources */,
+				845D81FF1F3AF78700BD3DAA /* LargeValueFormatter.swift in Sources */,
+				84EEF4601F63DD76004EEEAA /* MMTableViewController.m in Sources */,
+				84EEF4651F63DD8D004EEEAA /* SettingViewController.m in Sources */,
+				84EEF45F1F63DD76004EEEAA /* ControlViewController.m in Sources */,
+				845D81FD1F3AF78700BD3DAA /* DayAxisValueFormatter.m in Sources */,
+				8417A6701F5A83BA00593A14 /* Env.m in Sources */,
+				847045371FB85B9600C3A164 /* UserSettingViewController.m in Sources */,
+				84EEF4501F63B9F8004EEEAA /* Constants.m in Sources */,
+				845D81F31F3AF44500BD3DAA /* DemoBaseViewController.m in Sources */,
+				845D81D81F37559100BD3DAA /* ConnectionViewController.swift in Sources */,
+				845D81E81F39F8C100BD3DAA /* MMIoTManager.swift in Sources */,
+				845D81FE1F3AF78700BD3DAA /* IntAxisValueFormatter.m in Sources */,
+				845D81801F35C1DC00BD3DAA /* ViewController.m in Sources */,
+				845D81EF1F3AF40B00BD3DAA /* LineChartTimeViewController.m in Sources */,
+				845D81FC1F3AF78700BD3DAA /* DateValueFormatter.m in Sources */,
+				845D817D1F35C1DC00BD3DAA /* AppDelegate.m in Sources */,
+				84EEF4691F643451004EEEAA /* HistoryTableViewCell.m in Sources */,
+				847045411FB85DBD00C3A164 /* Crypto.m in Sources */,
+				845D81861F35C1DC00BD3DAA /* MedicalMonitor.xcdatamodeld in Sources */,
+				845D81CD1F35E0F500BD3DAA /* DDBDynamoDBManager.m in Sources */,
+				845D817A1F35C1DC00BD3DAA /* main.m in Sources */,
+				845D81D91F37559100BD3DAA /* Constants.swift in Sources */,
+				84EEF4611F63DD76004EEEAA /* MMTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845D818D1F35C1DC00BD3DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845D81961F35C1DC00BD3DAA /* MedicalMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845D81981F35C1DC00BD3DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845D81A11F35C1DC00BD3DAA /* MedicalMonitorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		845D81931F35C1DC00BD3DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845D81741F35C1DC00BD3DAA /* MedicalMonitor */;
+			targetProxy = 845D81921F35C1DC00BD3DAA /* PBXContainerItemProxy */;
+		};
+		845D819E1F35C1DC00BD3DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845D81741F35C1DC00BD3DAA /* MedicalMonitor */;
+			targetProxy = 845D819D1F35C1DC00BD3DAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		845D81811F35C1DC00BD3DAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845D81821F35C1DC00BD3DAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		845D81891F35C1DC00BD3DAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845D818A1F35C1DC00BD3DAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		845D81A31F35C1DC00BD3DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		845D81A41F35C1DC00BD3DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845D81A61F35C1DC00BD3DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FAB047BA29CE8AF8AEB4833 /* Pods-MedicalMonitor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MedicalMonitor/MedicalMonitor.entitlements;
+				DEVELOPMENT_TEAM = DFM84XB9EC;
+				INFOPLIST_FILE = MedicalMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talengineer.MedicalMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MedicalMonitor/MedicalMonitor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		845D81A71F35C1DC00BD3DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8607674F7257E0914994F0F8 /* Pods-MedicalMonitor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MedicalMonitor/MedicalMonitor.entitlements;
+				DEVELOPMENT_TEAM = DFM84XB9EC;
+				INFOPLIST_FILE = MedicalMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talengineer.MedicalMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MedicalMonitor/MedicalMonitor-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		845D81A91F35C1DC00BD3DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0231F9FC8440C37F1C327021 /* Pods-MedicalMonitorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedicalMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talengineer.MedicalMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedicalMonitor.app/MedicalMonitor";
+			};
+			name = Debug;
+		};
+		845D81AA1F35C1DC00BD3DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7756CC02D79EE741D77F32 /* Pods-MedicalMonitorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedicalMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talengineer.MedicalMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedicalMonitor.app/MedicalMonitor";
+			};
+			name = Release;
+		};
+		845D81AC1F35C1DC00BD3DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A62F8A379D7406BAED28D95 /* Pods-MedicalMonitorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MedicalMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talengineer.MedicalMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MedicalMonitor;
+			};
+			name = Debug;
+		};
+		845D81AD1F35C1DC00BD3DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B89BB141B919D82671E5F4 /* Pods-MedicalMonitorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MedicalMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talengineer.MedicalMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MedicalMonitor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845D81701F35C1DC00BD3DAA /* Build configuration list for PBXProject "MedicalMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845D81A31F35C1DC00BD3DAA /* Debug */,
+				845D81A41F35C1DC00BD3DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845D81A51F35C1DC00BD3DAA /* Build configuration list for PBXNativeTarget "MedicalMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845D81A61F35C1DC00BD3DAA /* Debug */,
+				845D81A71F35C1DC00BD3DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845D81A81F35C1DC00BD3DAA /* Build configuration list for PBXNativeTarget "MedicalMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845D81A91F35C1DC00BD3DAA /* Debug */,
+				845D81AA1F35C1DC00BD3DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845D81AB1F35C1DC00BD3DAA /* Build configuration list for PBXNativeTarget "MedicalMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845D81AC1F35C1DC00BD3DAA /* Debug */,
+				845D81AD1F35C1DC00BD3DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		845D81841F35C1DC00BD3DAA /* MedicalMonitor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				845D81851F35C1DC00BD3DAA /* MedicalMonitor.xcdatamodel */,
+			);
+			currentVersion = 845D81851F35C1DC00BD3DAA /* MedicalMonitor.xcdatamodel */;
+			path = MedicalMonitor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 845D816D1F35C1DC00BD3DAA /* Project object */;
+}
