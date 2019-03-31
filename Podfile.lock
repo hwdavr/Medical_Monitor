@@ -1,24 +1,31 @@
 PODS:
-  - AWSCore (2.5.9)
-  - AWSDynamoDB (2.5.9):
-    - AWSCore (= 2.5.9)
-  - AWSIoT (2.5.9):
-    - AWSCore (= 2.5.9)
-  - Charts (3.0.2):
-    - Charts/Core (= 3.0.2)
-  - Charts/Core (3.0.2)
+  - AWSCore (2.8.4)
+  - AWSDynamoDB (2.8.4):
+    - AWSCore (= 2.8.4)
+  - AWSIoT (2.8.4):
+    - AWSCore (= 2.8.4)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
 
 DEPENDENCIES:
   - AWSDynamoDB
   - AWSIoT
   - Charts
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AWSCore
+    - AWSDynamoDB
+    - AWSIoT
+    - Charts
+
 SPEC CHECKSUMS:
-  AWSCore: c71840dd51f271dc0af8de8fd6f352767ebde8b4
-  AWSDynamoDB: 5817c47852d1548645d9eb23f809d57d763975f9
-  AWSIoT: c10cee06f05eab49aa429d332cb5ba5ddbaf7d65
-  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  AWSCore: 734b0d67c2c77f6edae9e5520431a37310ea4193
+  AWSDynamoDB: f2c1b1915293290056eead41154df61f876d23ed
+  AWSIoT: 3e41785ebe7f6d4c40a4dfff214676a2a2e9e6d0
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
 
 PODFILE CHECKSUM: 4b94eb46d84612bec6783a5631508e7150b44357
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3

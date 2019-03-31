@@ -11,6 +11,7 @@
 #import "LineChartTimeViewController.h"
 #import "AWSIoT.h"
 #import "Crypto.h"
+#import "ModelManager.h"
 
 @interface MMTableViewController () {
 NSArray *channels;
@@ -29,7 +30,9 @@ NSMutableArray *values;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationItem setTitle:@"Monitor"];
-    
+
+    ModelManager *manager = [ModelManager new];
+    [manager printMessage];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

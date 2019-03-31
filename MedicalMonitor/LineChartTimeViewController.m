@@ -331,15 +331,15 @@ NSUInteger curIndex;
         return;
     }
 
-    if ([key isEqualToString:@"toggleStepped"])
-    {
-        for (id<ILineChartDataSet> set in _chartView.data.dataSets)
-        {
-            set.drawSteppedEnabled = !set.isDrawSteppedEnabled;
-        }
-
-        [_chartView setNeedsDisplay];
-    }
+//    if ([key isEqualToString:@"toggleStepped"])
+//    {
+//        for (id<ILineChartDataSet> set in _chartView.data.dataSets)
+//        {
+//            set.isDrawSteppedEnabled = !set.isDrawSteppedEnabled;
+//        }
+//
+//        [_chartView setNeedsDisplay];
+//    }
     
     if ([key isEqualToString:@"toggleHorizontalCubic"])
     {

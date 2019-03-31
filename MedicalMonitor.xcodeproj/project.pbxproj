@@ -35,6 +35,11 @@
 		847045371FB85B9600C3A164 /* UserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847045361FB85B9600C3A164 /* UserSettingViewController.m */; };
 		847045411FB85DBD00C3A164 /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 847045401FB85DBD00C3A164 /* Crypto.m */; };
 		847045441FB861F400C3A164 /* cdecode.c in Sources */ = {isa = PBXBuildFile; fileRef = 847045431FB861F400C3A164 /* cdecode.c */; };
+		849DDDFA1FC97982006FA95A /* DataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849DDDF81FC97982006FA95A /* DataModel.cpp */; };
+		849DDE071FC982F3006FA95A /* ModelManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849DDE061FC982F3006FA95A /* ModelManager.mm */; };
+		849DDE0B1FC992E5006FA95A /* sensor_conf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849DDE091FC992E5006FA95A /* sensor_conf.cpp */; };
+		84B06B591FD285F400EC8288 /* util_list.tpp in Resources */ = {isa = PBXBuildFile; fileRef = 84B06B581FD285F400EC8288 /* util_list.tpp */; };
+		84B06B631FD286BC00EC8288 /* iot_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B06B611FD286BC00EC8288 /* iot_device.cpp */; };
 		84EEF4501F63B9F8004EEEAA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF44F1F63B9F8004EEEAA /* Constants.m */; };
 		84EEF4541F63C215004EEEAA /* NoticeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF4531F63C215004EEEAA /* NoticeState.m */; };
 		84EEF45F1F63DD76004EEEAA /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF4591F63DD76004EEEAA /* ControlViewController.m */; };
@@ -137,7 +142,7 @@
 		845D819C1F35C1DC00BD3DAA /* MedicalMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicalMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		845D81A01F35C1DC00BD3DAA /* MedicalMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalMonitorUITests.m; sourceTree = "<group>"; };
 		845D81A21F35C1DC00BD3DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		845D81AE1F35C49400BD3DAA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		845D81AE1F35C49400BD3DAA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		845D81B01F35C50700BD3DAA /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		845D81C81F35E0DB00BD3DAA /* DDBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBMainViewController.h; sourceTree = "<group>"; };
 		845D81C91F35E0DB00BD3DAA /* DDBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBMainViewController.m; sourceTree = "<group>"; };
@@ -166,6 +171,16 @@
 		847045401FB85DBD00C3A164 /* Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crypto.m; sourceTree = "<group>"; };
 		847045421FB861F400C3A164 /* cdecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cdecode.h; path = Utils/cdecode.h; sourceTree = "<group>"; };
 		847045431FB861F400C3A164 /* cdecode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cdecode.c; path = Utils/cdecode.c; sourceTree = "<group>"; };
+		849DDDF81FC97982006FA95A /* DataModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = DataModel.cpp; path = Model/DataModel.cpp; sourceTree = "<group>"; };
+		849DDDF91FC97982006FA95A /* DataModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataModel.hpp; path = Model/DataModel.hpp; sourceTree = "<group>"; };
+		849DDE051FC982F3006FA95A /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelManager.h; path = Model/ModelManager.h; sourceTree = "<group>"; };
+		849DDE061FC982F3006FA95A /* ModelManager.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ModelManager.mm; path = Model/ModelManager.mm; sourceTree = "<group>"; };
+		849DDE091FC992E5006FA95A /* sensor_conf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sensor_conf.cpp; path = Model/sensor_conf.cpp; sourceTree = "<group>"; };
+		849DDE0A1FC992E5006FA95A /* sensor_conf.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = sensor_conf.hpp; path = Model/sensor_conf.hpp; sourceTree = "<group>"; };
+		84B06B571FD285F400EC8288 /* util_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util_list.h; path = Model/util_list.h; sourceTree = "<group>"; };
+		84B06B581FD285F400EC8288 /* util_list.tpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = util_list.tpp; path = Model/util_list.tpp; sourceTree = "<group>"; };
+		84B06B611FD286BC00EC8288 /* iot_device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iot_device.cpp; sourceTree = "<group>"; };
+		84B06B621FD286BC00EC8288 /* iot_device.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = iot_device.hpp; sourceTree = "<group>"; };
 		84EEF40D1F5A9D04004EEEAA /* MedicalMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalMonitor.entitlements; sourceTree = "<group>"; };
 		84EEF44E1F63B9F8004EEEAA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		84EEF44F1F63B9F8004EEEAA /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
@@ -360,6 +375,16 @@
 				84EEF4531F63C215004EEEAA /* NoticeState.m */,
 				8470453F1FB85DBD00C3A164 /* Crypto.h */,
 				847045401FB85DBD00C3A164 /* Crypto.m */,
+				84B06B571FD285F400EC8288 /* util_list.h */,
+				84B06B581FD285F400EC8288 /* util_list.tpp */,
+				849DDDF81FC97982006FA95A /* DataModel.cpp */,
+				849DDDF91FC97982006FA95A /* DataModel.hpp */,
+				849DDE051FC982F3006FA95A /* ModelManager.h */,
+				849DDE061FC982F3006FA95A /* ModelManager.mm */,
+				849DDE091FC992E5006FA95A /* sensor_conf.cpp */,
+				849DDE0A1FC992E5006FA95A /* sensor_conf.hpp */,
+				84B06B611FD286BC00EC8288 /* iot_device.cpp */,
+				84B06B621FD286BC00EC8288 /* iot_device.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -422,7 +447,6 @@
 				845D81721F35C1DC00BD3DAA /* Frameworks */,
 				845D81731F35C1DC00BD3DAA /* Resources */,
 				E89C20553A24D3CF5D652103 /* [CP] Embed Pods Frameworks */,
-				D686E95405E3EC1ABA5E879B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -441,8 +465,6 @@
 				845D818D1F35C1DC00BD3DAA /* Sources */,
 				845D818E1F35C1DC00BD3DAA /* Frameworks */,
 				845D818F1F35C1DC00BD3DAA /* Resources */,
-				0F4AA3E4AF8D162ADD0851D4 /* [CP] Embed Pods Frameworks */,
-				868BE32016A3D401FE603DCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -462,8 +484,6 @@
 				845D81981F35C1DC00BD3DAA /* Sources */,
 				845D81991F35C1DC00BD3DAA /* Frameworks */,
 				845D819A1F35C1DC00BD3DAA /* Resources */,
-				612ED42DFB2EDE1C49D1CF05 /* [CP] Embed Pods Frameworks */,
-				EC625F6F12E78B11279E309F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -596,6 +616,7 @@
 				845D81F01F3AF40B00BD3DAA /* LineChartTimeViewController.xib in Resources */,
 				84EEF4661F63DD8D004EEEAA /* SettingViewController.xib in Resources */,
 				845D81831F35C1DC00BD3DAA /* Main.storyboard in Resources */,
+				84B06B591FD285F400EC8288 /* util_list.tpp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,34 +637,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F4AA3E4AF8D162ADD0851D4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitorTests/Pods-MedicalMonitorTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		148C56F6A092E6C686C57BD8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicalMonitorUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2A5F0709829F10DF852EF3F9 /* [CP] Check Pods Manifest.lock */ = {
@@ -652,13 +661,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicalMonitor-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		347077D49566ABB573AD31B9 /* [CP] Check Pods Manifest.lock */ = {
@@ -667,58 +679,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicalMonitorTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		612ED42DFB2EDE1C49D1CF05 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitorUITests/Pods-MedicalMonitorUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		868BE32016A3D401FE603DCC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitorTests/Pods-MedicalMonitorTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D686E95405E3EC1ABA5E879B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E89C20553A24D3CF5D652103 /* [CP] Embed Pods Frameworks */ = {
@@ -727,28 +697,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSIoT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC625F6F12E78B11279E309F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitorUITests/Pods-MedicalMonitorUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -764,9 +728,13 @@
 				84EEF4541F63C215004EEEAA /* NoticeState.m in Sources */,
 				845D81FF1F3AF78700BD3DAA /* LargeValueFormatter.swift in Sources */,
 				84EEF4601F63DD76004EEEAA /* MMTableViewController.m in Sources */,
+				84B06B631FD286BC00EC8288 /* iot_device.cpp in Sources */,
 				84EEF4651F63DD8D004EEEAA /* SettingViewController.m in Sources */,
 				84EEF45F1F63DD76004EEEAA /* ControlViewController.m in Sources */,
+				849DDE071FC982F3006FA95A /* ModelManager.mm in Sources */,
 				845D81FD1F3AF78700BD3DAA /* DayAxisValueFormatter.m in Sources */,
+				849DDDFA1FC97982006FA95A /* DataModel.cpp in Sources */,
+				849DDE0B1FC992E5006FA95A /* sensor_conf.cpp in Sources */,
 				8417A6701F5A83BA00593A14 /* Env.m in Sources */,
 				847045371FB85B9600C3A164 /* UserSettingViewController.m in Sources */,
 				84EEF4501F63B9F8004EEEAA /* Constants.m in Sources */,
@@ -940,6 +908,7 @@
 				CODE_SIGN_ENTITLEMENTS = MedicalMonitor/MedicalMonitor.entitlements;
 				DEVELOPMENT_TEAM = DFM84XB9EC;
 				INFOPLIST_FILE = MedicalMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.talengineer.MedicalMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -958,6 +927,7 @@
 				CODE_SIGN_ENTITLEMENTS = MedicalMonitor/MedicalMonitor.entitlements;
 				DEVELOPMENT_TEAM = DFM84XB9EC;
 				INFOPLIST_FILE = MedicalMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.talengineer.MedicalMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
