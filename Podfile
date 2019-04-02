@@ -7,7 +7,7 @@ target 'MedicalMonitor' do
 
   pod 'AWSDynamoDB'
   pod 'AWSIoT'
-  pod 'Charts'
+  pod 'Charts', '3.1.0'
 
   target 'MedicalMonitorTests' do
     inherit! :search_paths

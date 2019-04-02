@@ -49,6 +49,7 @@
 		84EEF4661F63DD8D004EEEAA /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EEF4641F63DD8D004EEEAA /* SettingViewController.xib */; };
 		84EEF4691F643451004EEEAA /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF4681F643451004EEEAA /* HistoryTableViewCell.m */; };
 		84EEF46C1F643477004EEEAA /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEF46B1F643477004EEEAA /* HistoryTableViewController.m */; };
+		BAF7C17922534557009DC169 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF7C17122534557009DC169 /* libstdc++.tbd */; };
 		C9FFAAB7C2C29B9644F87E79 /* Pods_MedicalMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADFF9F97DC167D17EBADD86 /* Pods_MedicalMonitorUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -203,6 +204,7 @@
 		87B89BB141B919D82671E5F4 /* Pods-MedicalMonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalMonitorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalMonitorUITests/Pods-MedicalMonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8FAB047BA29CE8AF8AEB4833 /* Pods-MedicalMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor.debug.xcconfig"; sourceTree = "<group>"; };
 		B08264010B3CB5EAFE4EFC3E /* Pods_MedicalMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF7C17122534557009DC169 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		FADFF9F97DC167D17EBADD86 /* Pods_MedicalMonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalMonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -211,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF7C17922534557009DC169 /* libstdc++.tbd in Frameworks */,
 				6F352E46CB90D331EFA8F885 /* Pods_MedicalMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +417,7 @@
 		F06281E4B60D723207A04CBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAF7C17122534557009DC169 /* libstdc++.tbd */,
 				845D81AE1F35C49400BD3DAA /* Podfile */,
 				229523457DA87C916B8459B0 /* Pods_MedicalMonitor.framework */,
 				B08264010B3CB5EAFE4EFC3E /* Pods_MedicalMonitorTests.framework */,
@@ -697,7 +701,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
@@ -712,7 +716,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicalMonitor/Pods-MedicalMonitor-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
